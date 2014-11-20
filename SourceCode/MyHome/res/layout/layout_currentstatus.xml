@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFF7F2"
+     >
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu"
+        android:layout_marginTop="13dp"
+        android:gravity="center">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:text="Current Status"
+            android:textStyle="bold|italic"
+            android:id="@+id/header"/>
+        
+        <ImageView 
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:padding="5dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/door"
+            android:layout_below="@+id/header"
+            android:src="@drawable/closed_door"/>
+
+        <ImageView 
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:padding="5dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="0dp"
+            android:id="@+id/window"
+            android:layout_below="@+id/door"
+            android:src="@drawable/closed_window"
+            />
+        
+        <ImageView 
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:padding="5dp"
+            android:id="@+id/light"
+            android:layout_below="@+id/window"
+            android:src="@drawable/light_off"/>
+        
+    </RelativeLayout>
+    
+</RelativeLayout>

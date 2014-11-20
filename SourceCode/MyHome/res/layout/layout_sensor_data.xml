@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#DFF7F2">
+
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:textSize="20sp"
+    android:text="Temp"
+    android:textStyle="italic|bold"
+    android:gravity="center_horizontal"
+    android:id="@+id/header"/>
+
+<ListView
+    android:id="@+id/sensors"
+    android:layout_width="wrap_content"
+    android:layout_height="400dp"
+    android:layout_marginTop="15dp"
+    android:layout_below="@+id/header" >
+    
+</ListView>
+<Button 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Show All Doors"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/button_pic"
+    android:textStyle="bold"
+    android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
